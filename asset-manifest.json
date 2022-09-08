@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/USPresidents/static/css/main.70c9516f.css",
+    "main.js": "/USPresidents/static/js/main.549a89ae.js",
+    "static/js/787.e3b3a9f0.chunk.js": "/USPresidents/static/js/787.e3b3a9f0.chunk.js",
+    "index.html": "/USPresidents/index.html",
+    "main.70c9516f.css.map": "/USPresidents/static/css/main.70c9516f.css.map",
+    "main.549a89ae.js.map": "/USPresidents/static/js/main.549a89ae.js.map",
+    "787.e3b3a9f0.chunk.js.map": "/USPresidents/static/js/787.e3b3a9f0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.70c9516f.css",
+    "static/js/main.549a89ae.js"
+  ]
+}
