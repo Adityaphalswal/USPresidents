@@ -15,14 +15,22 @@ class App extends Component {
   }
 
   display(filteredPresidents,filteredPresidentsByParty,president) {
-    if(!filteredPresidents){
-      return filteredPresidentsByParty
-    } else if(filteredPresidentsByParty){
-      return filteredPresidents
-    }else{
-      return president
+    const a = filteredPresidents.length;
+    const b = filteredPresidentsByParty.length;
+    const c = president.length;
+    console.log(a,b,c);
+    if(a===c && b===c){
+      return president;
     }
-  }
+    else if(a===c && b!==c){
+      return filteredPresidentsByParty;
+    }
+    else if(a!==c && b===c){
+      return filteredPresidents;
+    } else if(a!==c && b!==c){
+      return filteredPresidents.filter(president => filteredPresidentsByParty.indexOf(president) !== -1);
+    }
+}
   render() {
     const {presidents , searchByName,searchByParty} = this.state;
     const filteredPresidents = presidents.filter(president => president.name.toLowerCase().includes(searchByName.toLowerCase()));
